@@ -1,0 +1,16 @@
+header .banner {
+  background-color: rgb(249, 255, 253);
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+main {
+  min-height: 75vh;
+}
+
+footer {
+  background-color: #333;
+  color: gray;
+  font-family: 'Permanent Marker', cursive;
+  height: 7em;
+  text-align: center;
+}
