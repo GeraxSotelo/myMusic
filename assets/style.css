@@ -3,14 +3,43 @@ header .banner {
   font-family: 'Gloria Hallelujah', cursive;
 }
 
+.nav #dropdown {
+  flex-grow: 3;
+}
+
+.dropdown-menu {
+  width: 100%;
+}
+
 main {
   min-height: 75vh;
+}
+
+#playlist-card {
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+  position: relative;
+}
+
+#playlist-card p {
+  padding: 0 1em;
+}
+
+#playlist-card .fa-minus {
+  border: 1px solid gray;
+  padding: 0.2em 0.4em;
+  position: absolute;
+  top: 5%;
+  right: 3%;
 }
 
 .card-img-top {
   object-fit: cover;
   max-height: 10em;
   max-width: 10em;
+  text-align: center;
 }
 
 .card-body {
@@ -26,6 +55,12 @@ main {
 
 .audio {
   max-width: 100%;
+}
+
+.add-to-playlist {
+  border: 1px solid gray;
+  border-radius: 45%;
+  font-size: 0.8em;
 }
 
 footer {

@@ -12,8 +12,8 @@ export default class Song {
 
   get Template() {
     return `
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="card">
+      <div class="col-6 col-sm-4 col-md-2 mt-1 mb-1">
+        <div class="card align-items-center">
           <img src="${this.albumArt}" class="card-img-top">
           <div class="row card-body">
             <div>
@@ -32,6 +32,9 @@ export default class Song {
               Your browser does not support the audio tag.
             </audio></p>
             </div>
+            <div class="text-center">
+              <button class="btn btn-light add-to-playlist" onclick="app.songsController.addSong(${this._id})">Add to playlist</button>
+            </div>
           </div>
         </div>
       </div>
@@ -40,7 +43,30 @@ export default class Song {
 
   get playlistTemplate() {
     return `
-
+    <div class="col-12 m-0">
+      <div id="playlist-card" class="card">
+        <i class="fas fa-minus"></i>
+        <img src="//placehold.it/200x200" class="card-img-top">
+        <div class="row card-body">
+          <div>
+            <p>Artist: </p>
+          </div>
+          <div class="d-flex justify-content-between">
+            <p><b>thing</b></p>
+            <p>Price</p>
+          </div>
+          <div>
+            <p>$this.album</p>
+          </div>
+          <div>
+            <p><audio class="audio" controls>
+              <source src="">
+              Your browser does not support the audio tag.
+              </audio></p>
+          </div>
+        </div>
+      </div>
+    </div>
         `;
   }
 }

@@ -25,7 +25,7 @@ class SongsService {
       .then(res => {
         let results = res.results.map(rawData => new Song(rawData));
         store.commit("songs", results);
-        console.log(store.State);
+        // console.log(store.State);
 
       })
       .catch(err => {
@@ -42,6 +42,7 @@ class SongsService {
       .then(res => {
         //TODO What are you going to do with this result
         let results = res.results.map(rawData => new Song(rawData));
+        store.commit("playlist", results)
       })
       .catch(error => {
         throw new Error(error);
