@@ -58,9 +58,9 @@ class SongsService {
   addSong(id) {
     //TODO you only have an id, you will need to find it in the store before you can post it
     //TODO After posting it what should you do?
-    debugger;
+    // debugger;
     let foundSong = store.State.songs.find(song => song._id == id)
-    _sandBox.post(foundSong).then(res => {
+    _sandBox.post("", foundSong).then(res => {
       this.getMySongs()
     }).catch(err => {
       console.log(err);
