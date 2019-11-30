@@ -36,7 +36,7 @@ export default class Song {
               <p><em>${this.album}</em></p>
             </div>
             <div>
-              <p><audio class="audio ${this.playPreview}" controls onclick="app.songsController.activePreview()">
+              <p><audio class="audio ${this.playPreview}" controls onplay="app.songsController.activePreview(event)">
               <source src="${this.preview}">
               Your browser does not support the audio tag.
             </audio></p>

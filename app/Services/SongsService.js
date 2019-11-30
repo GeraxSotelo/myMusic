@@ -11,7 +11,7 @@ class SongsService {
   constructor() {
     // NOTE this will get your songs on page load
     this.getMySongs();
-    this.activePreview();
+    // this.activePreview();
 
   }
 
@@ -84,19 +84,13 @@ class SongsService {
     })
   }
 
-  activePreview() {
-    // Listen to the 'play' event:
-    document.addEventListener('play', function (e) {
-      // Collect all <audio> elements in the page:
-      let allAudios = document.getElementsByTagName('audio');
-      // Iterate through all players and pause them, except for
-      // the one who fired the "play" event ("target")
-      for (let i = 0; i < allAudios.length; i++) {
-        if (allAudios[i] != e.target) {
-          allAudios[i].pause();
-        }
+  activePreview(event) {
+    let allAudios = document.getElementsByTagName('audio');
+    for (let i = 0; i < allAudios.length; i++) {
+      if (allAudios[i] != event.target) {
+        allAudios[i].pause();
       }
-    }, true);
+    }
   }
 
 }

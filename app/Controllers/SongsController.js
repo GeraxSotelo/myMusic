@@ -51,7 +51,9 @@ export default class SongsController {
     SongService.removeSong(id)
   }
 
-  activePreview() {
-    SongService.activePreview()
+  activePreview(event) {
+    console.log(event);
+
+    SongService.activePreview(event)
   }
 }
