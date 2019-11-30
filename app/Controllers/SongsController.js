@@ -50,4 +50,8 @@ export default class SongsController {
   removeSong(id) {
     SongService.removeSong(id)
   }
+
+  activePreview() {
+    SongService.activePreview()
+  }
 }
