@@ -13,12 +13,6 @@ export default class Song {
     // this._id = data.trackId || data._id;
   }
 
-  playPreview() {
-    if (this.activePreview) {
-      return "active-preview"
-    }
-  }
-
   get Template() {
     return `
       <div class="col-6 col-sm-4 col-md-3 mt-1 mb-1">
@@ -36,7 +30,7 @@ export default class Song {
               <p><em>${this.album}</em></p>
             </div>
             <div>
-              <p><audio class="audio ${this.playPreview}" controls onplay="app.songsController.activePreview(event)">
+              <p><audio class="audio" controls onplay="app.songsController.activePreview(event)">
               <source src="${this.preview}">
               Your browser does not support the audio tag.
             </audio></p>
@@ -68,7 +62,7 @@ export default class Song {
             <p><em>${this.album}</em></p>
           </div>
           <div>
-            <p><audio class="audio" controls>
+            <p><audio class="audio" controls onplay="app.songsController.activePreview(event)">
               <source src="${this.preview}">
               Your browser does not support the audio tag.
               </audio></p>

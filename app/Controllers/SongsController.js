@@ -52,8 +52,6 @@ export default class SongsController {
   }
 
   activePreview(event) {
-    console.log(event);
-
     SongService.activePreview(event)
   }
 }
