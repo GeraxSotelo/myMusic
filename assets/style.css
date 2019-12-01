@@ -1,6 +1,13 @@
+body {
+  font-family: 'Poiret One', cursive;
+}
+
+.gloria-font {
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
 header .banner {
   background-color: rgb(249, 255, 253);
-  font-family: 'Gloria Hallelujah', cursive;
 }
 
 .nav #dropdown {
@@ -13,6 +20,18 @@ header .banner {
 
 main {
   min-height: 75vh;
+}
+
+.results-row hr {
+  border-top: 0.2em solid black;
+  width: 25%
+}
+
+.bg-temp {
+  color: gray;
+  font-size: 14em;
+  width: 100%;
+  text-align: center;
 }
 
 #playlist-card {

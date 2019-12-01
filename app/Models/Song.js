@@ -3,14 +3,13 @@ export default class Song {
   constructor(data) {
     this.title = data.trackName || data.title || "Unknown"
     this.albumArt =
-      data.albumArt || data.artworkUrl100.replace(/100x100/g, "500x500")
+      data.albumArt || data.artworkUrl100.replace(/100x100/g, "300x300")
     this.artist = data.artistName || data.artist;
     this.album = data.collectionName || data.album;
     this.price = data.trackPrice || data.price || " "
     this.preview = data.previewUrl || data.preview
     this.activePreview = false
     this._id = data.trackId || data._id || generateId()
-    // this._id = data.trackId || data._id;
   }
 
   get Template() {
