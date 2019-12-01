@@ -13,11 +13,6 @@ body {
   font-size: 1.2em;
 }
 
-
-header .banner {
-  /* background-color: rgb(249, 255, 253); */
-}
-
 .nav #dropdown {
   flex-grow: 3;
 }
