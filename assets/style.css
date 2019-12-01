@@ -1,4 +1,6 @@
 body {
+  background-color: rgb(20, 20, 20);
+  color: white;
   font-family: 'Poiret One', cursive;
 }
 
@@ -6,8 +8,14 @@ body {
   font-family: 'Gloria Hallelujah', cursive;
 }
 
+.nav a {
+  color: white;
+  font-size: 1.2em;
+}
+
+
 header .banner {
-  background-color: rgb(249, 255, 253);
+  /* background-color: rgb(249, 255, 253); */
 }
 
 .nav #dropdown {
@@ -23,7 +31,7 @@ main {
 }
 
 .results-row hr {
-  border-top: 0.2em solid black;
+  border-top: 0.2em solid gray;
   width: 25%
 }
 
@@ -52,6 +60,10 @@ main {
   right: 1%;
 }
 
+#results-card {
+  background-color: rgb(90, 90, 90);
+}
+
 .card-img-top {
   object-fit: cover;
   max-height: 10em;
@@ -76,14 +88,16 @@ main {
 
 .add-to-playlist {
   border: 1px solid gray;
-  border-radius: 45%;
+  border-radius: 10%;
+  color: black;
   font-size: 0.8em;
+  font-weight: bold;
 }
 
 footer {
   background-color: #333;
   color: gray;
   font-family: 'Permanent Marker', cursive;
-  height: 7em;
+  height: 5em;
   text-align: center;
 }

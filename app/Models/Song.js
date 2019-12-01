@@ -15,7 +15,7 @@ export default class Song {
   get Template() {
     return `
       <div class="col-6 col-sm-4 col-md-3 mt-1 mb-1">
-        <div class="card align-items-center">
+        <div id="results-card" class="card align-items-center pt-1 pb-1">
           <img src="${this.albumArt}" class="card-img-top">
           <div class="row card-body">
             <div>
